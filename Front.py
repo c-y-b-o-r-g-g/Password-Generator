@@ -1,5 +1,5 @@
 import os
-import passgen
+import Backend.passgen as passgen
 import Backend
 from Backend import encryptor, decryptor
 

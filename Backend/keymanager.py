@@ -9,11 +9,11 @@ class keygen:
     def getkey(cls):
         if keygen.key is None:
             keygen.key = Fernet.generate_key()
-            with open('mykey.key', 'wb') as file:
+            with open('Backend\\mykey.key', 'wb') as file:
                 file.write(keygen.key)
             return keygen.key
         else:
-            with open('mykey.key', 'wb') as file:
+            with open('Backend\\mykey.key', 'wb') as file:
                 file.write(keygen.key)
             return keygen.key
 

@@ -6,7 +6,7 @@ import os
 
 def decrypt(filename):
   try:
-    with open("mykey.key", "rb") as file:
+    with open("Backend\\mykey.key", "rb") as file:
         key = file.read()
     fernet = Fernet(key)
   except Exception as e:
@@ -20,7 +20,6 @@ def decrypt(filename):
     decrypted_data = fernet.decrypt(encrypted_data)
     with open(filename, 'wb') as decrypted_file:
       decrypted_file.write(decrypted_data)
-    print(f"File '{filename}' decrypted successfully!")
   except cryptography.fernet.InvalidKey:
     print("Invalid decryption key. Please check your key manager.")
 
