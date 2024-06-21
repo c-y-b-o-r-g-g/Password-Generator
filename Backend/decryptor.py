@@ -23,4 +23,3 @@ def decrypt(filename):
   except cryptography.fernet.InvalidKey:
     print("Invalid decryption key. Please check your key manager.")
 
-# Example usage (assuming "passes.txt.encrypted" exists)
