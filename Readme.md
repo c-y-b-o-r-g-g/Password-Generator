@@ -42,10 +42,3 @@ The [`Main.py`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%2
 - **Password Storage**: Offers the user the option to save the generated password, associating it with a specific website. The password is then encrypted and stored securely.
 - **Password Retrieval**: Allows the user to view their saved passwords by decrypting the [`passes.txt.encrypted`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2FSoftware%20Engineering%2FPython%20Projects%2FPassword%20Generator%2Fpasses.txt.encrypted%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "d:\Software Engineering\Python Projects\Password Generator\passes.txt.encrypted") file, displaying the contents, and then re-encrypting the file for security.
 
-## Security Measures
-
-The Secure Password Manager prioritizes security at every step, from generating complex passwords to securely encrypting and storing them. By employing advanced encryption techniques and ensuring that the encryption key is securely managed and stored, it provides a robust defense against unauthorized access and cyber threats.
-
-## Conclusion
-
-The Secure Password Manager is an essential tool for anyone looking to enhance their online security. Its sophisticated encryption processes, coupled with an intuitive user interface, make managing passwords both secure and straightforward.
