@@ -5,10 +5,17 @@ from Backend import encryptor, decryptor
 
 
 def save(site, password):
-    decryptor.decrypt("passes.txt")
-    with open("passes.txt", "a") as file:
-        file.write(f"{site}: {password}\n")
-    encryptor.encrypt("passes.txt")
+    try:
+        decryptor.decrypt("passes.txt")
+        with open("passes.txt", "a") as file:
+            file.write(f"{site}: {password}\n")
+        encryptor.encrypt("passes.txt")
+    except Exception as e:
+        print(f"Error: {e}")
+        print("Creating a new file...")
+        with open("passes.txt", "w") as file:
+            file.write(f"{site}: {password}\n")
+        encryptor.encrypt("passes.txt")
 
 l = input("Enter password Length: ")
 l = int(l) if l.isdigit() else 0
